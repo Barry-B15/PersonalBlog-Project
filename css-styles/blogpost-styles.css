@@ -1,0 +1,57 @@
+@import "blogpost-layout-style.css";
+@import "blogpost-main.css";
+@import "blogpost-text-style.css";
+body {
+    background: rgb(248, 237, 237);
+    align-items: center;
+}
+
+#container {
+    display: grid;
+    width: 96vw;
+    height: auto;
+    margin: 0vw 1vw 1vw 1vw;
+    /* set % for the 1st column and repaet the num of the remaining blocks */
+    grid-template-columns: 15% repeat(3, 1fr);
+    /* rows: set the height of the blocks 1st: 10, 2nd: auto, last: 15*/
+    grid-template-rows: 10vw 1fr 15vw;
+    grid-template-areas: "hd hd hd hd" "as mn mn mn" "ft ft ft ft";
+}
+
+.post-box {
+    border: 1px dotted goldenrod;
+}
+
+
+/*  optimize for small screens */
+
+@media(min-width: 350px) and (max-width: 650px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+    #main-content {
+        display: flex;
+        flex-direction: column;
+    }
+    #header {
+        width: 90vw;
+        height: auto;
+        background-image: none;
+    }
+    .blog-img img {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+
+/* for larger screen devices */
+
+@media(min-width: 1101px) {
+    .container {
+        grid-template-areas: "hd hd hd hd hd hd hd hd""sb mn mn mn mn mn mn mn""ft ft ft ft ft ft ft ft";
+        background: 3px solid #444;
+    }
+}

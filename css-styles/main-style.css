@@ -1,0 +1,133 @@
+@import "headers.css";
+@import "sidebar.css";
+@import "main-content.css";
+@import "blog-layout.css";
+
+/* The main css file for the blog top pages */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #b9c0a9;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+
+/* style the h's */
+
+h1,
+h2,
+h3,
+h4 {
+    color: #c22b10;
+}
+
+h3 {
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fffdfe;
+}
+
+a:hover {
+    color: #f3130b;
+}
+
+strong {
+    font-weight: 700;
+}
+
+
+/*  optimize for small screens */
+
+@media(min-width: 350px) and (max-width: 650px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+    header {
+        background-image: none;
+    }
+    section {
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-areas: "cont" "cont" "cont";
+        text-align: left;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0em;
+        padding: 0em 0em 0em 0.3em;
+        width: 90vw;
+    }
+    .content-box {
+        width: 90vw;
+        background: #fffdfe;
+    }
+    #content-feat {
+        margin: 0em 0em 0em 0em;
+    }
+    #feat-pix img {
+        width: 65vw;
+        height: auto;
+        margin: 0px;
+    }
+    #title,
+    #feat-description {
+        width: 75vw;
+        padding: 0em 0em 0em 0em;
+    }
+    #content-1,
+    #content-2,
+    #content-3 {
+        width: 80vw;
+        padding: 0em 1em 1em 1em;
+    }
+    #content1-image,
+    #content2-image,
+    #content3-image {
+        width: 75vw;
+        height: 40vh;
+    }
+    #connect {
+        margin: 2em 0.5em 0em 0em;
+    }
+    #sidebar {
+        width: 90vw;
+        order: 2;
+    }
+    footer {
+        order: 3;
+    }
+    .past-feat,
+    #contact {
+        width: 85vw;
+        font-size: 0.9em;
+        padding: 1em 0.5em 1em 1em;
+        margin: 0.1em inherit 0em auto;
+    }
+    #author {
+        width: 90vw;
+        margin: 0.5em auto 0.2em 0.1em;
+    }
+    #author img {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+
+/* optimize for large screens */
+
+@media(min-width: 1101px) {
+    .container {
+        grid-template-areas: "hd hd hd hd hd hd hd hd" "sb mn mn mn mn mn mn mn" "ft ft ft ft ft ft ft ft";
+        background: 3px solid #444;
+    }
+}

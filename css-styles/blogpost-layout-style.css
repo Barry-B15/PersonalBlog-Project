@@ -1,0 +1,32 @@
+#header {
+    grid-area: hd;
+    background: #913434;
+    background-image: url("../images/beaut-japanM.png");
+    background-size: cover;
+}
+
+#sidebar {
+    grid-area: as;
+    background: #c0c0c0;
+    border: 1px solid goldenrod;
+}
+
+#main-content {
+    grid-area: mn;
+    background: #c0c0c0;
+}
+
+#img-section {
+    background: #889b9b;
+    border-radius: 1em 0em 0em 1em;
+}
+
+#art-1 {
+    background: lightsteelblue;
+    border-radius: 0em 1em 1em 0em;
+}
+
+#footer {
+    grid-area: ft;
+    background: #913434;
+}

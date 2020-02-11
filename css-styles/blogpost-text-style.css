@@ -1,0 +1,46 @@
+body {
+    line-height: 2em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #fff;
+    padding: 0em 0em 0em 1em;
+}
+
+nav {
+    text-align: right;
+    padding: 0em;
+    margin: 0em 1em -0.5em auto;
+}
+
+#footer {
+    text-align: center;
+}
+
+.description ul {
+    list-style-type: square;
+    border-radius: 1em;
+}
+
+button {
+    color: #fff;
+    width: 5em;
+    padding: 0.5em;
+    margin: 0em;
+    background: #080;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #919591;
+}
+
+a:hover {
+    color: #f3130b;
+}

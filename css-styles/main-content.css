@@ -1,0 +1,96 @@
+/* step 6: add style to the nested children*/
+
+section {
+    display: grid;
+    grid-gap: 0.1em;
+    grid-template-areas: "cont cont cont cont";
+    background: #a5a5a5;
+    text-align: left;
+}
+
+
+/* handle the nested content box*/
+
+.content-box {
+    background: cadetblue;
+    height: auto;
+    border: 0.1em dotted #f8f40f;
+}
+
+#content-feat,
+#content-1,
+#content-2,
+#content-3 {
+    padding: 1em;
+}
+
+#content-feat {
+    /* handle the children of featured content*/
+    /*children handle end*/
+    grid-area: cont;
+    padding: 0px 25px 5px 10px;
+    margin: 0px 5px 0px 5px;
+}
+
+#feat-pix {
+    width: auto;
+    /* order: 1; for flex and delete float */
+    float: left;
+    padding: 1em 2em 0em 1em;
+}
+
+figcaption {
+    color: teal;
+}
+
+button {
+    color: #fff;
+    width: 5em;
+    padding: 0.5em;
+    margin: 0em;
+    background: #080;
+}
+
+#feat-description {
+    /* order: 2; works with flex */
+    margin: 1em 2em 2em 1em;
+}
+
+#content-1,
+#content-2,
+#content-3 {
+    border-radius: 0.5em 0.5em 0em 0em;
+    width: 21vw;
+    padding: 0em 0.2em 0.5em 0.3em;
+}
+
+
+/* Style the content grandchild: image*/
+
+#content1-image,
+#content2-image,
+#content3-image {
+    width: 21vw;
+    height: 40vh;
+    background-size: cover;
+    align-content: center;
+    padding: 0em 0em 0em 0em;
+    margin: 0em 0em 0em 0em;
+    border-radius: 1em;
+}
+
+#content1-image {
+    background-image: url("../images/top_fuji.png");
+}
+
+#content2-image {
+    background-image: url("../images/nebuta.png");
+}
+
+#content3-image {
+    background-image: url("../images/showa-park.jpg");
+}
+
+#description {
+    padding: 0em 1em 0.5em 1em;
+}

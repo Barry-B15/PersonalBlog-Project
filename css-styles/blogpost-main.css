@@ -1,0 +1,14 @@
+#main-content {
+    display: flex;
+    flex-direction: row;
+    /*or adjust as needed*/
+    padding: 0.5em;
+}
+
+#img-section {
+    padding: 0.5em;
+}
+
+#art-1 {
+    padding: 0.5em;
+}

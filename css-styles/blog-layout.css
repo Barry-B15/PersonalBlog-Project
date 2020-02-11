@@ -1,0 +1,39 @@
+.container {
+    /* step 1: set the display to grid */
+    display: grid;
+    /* step 2: set the width */
+    width: 95vw;
+    height: auto;
+    /* margin: auto; */
+    margin: 0px 10px 5px 10px;
+    /* step 3: set the cols, rows and areas */
+    grid-template-columns: 30% repeat(7, 1fr);
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: "hd hd hd hd hd hd hd hd""sb mn mn mn mn mn mn mn""ft ft ft ft ft ft ft ft";
+    border-radius: 1%;
+}
+
+.container-box {
+    height: auto;
+}
+
+
+/* put the grid template areas into the sections */
+
+header {
+    grid-area: hd;
+}
+
+#footer {
+    grid-area: ft;
+    background: rgb(108, 116, 101);
+    padding: 2em 4em 2em 4em;
+}
+
+#sidebar {
+    grid-area: sb;
+}
+
+main {
+    grid-area: mn;
+}
